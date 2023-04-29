@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  color: #333;
+  background-color: #fff;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.app header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: #776e65;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.extra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.extra button {
+  padding: 0.8em 1.5em;
+  color: #fff;
+  background-color: #8f7a66;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.extra #score {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #776e65;
+}
+
+#board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px;
+  width: 500px;
+  height: 500px;
+  background-color: #bbada0;
+  border-radius: 6px;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: calc((100% - 45px) / 4);
+  aspect-ratio: 1/1;
+  color: #776e65;
+  background-color: #eee4da59;
+  border-radius: 3px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.cell.x2 {
+  background-color: #eee4da;
+}
+
+.cell.x4 {
+  background-color: #ede0c8;
+}
+
+.cell.x8 {
+  color: white;
+  background-color: #f2b179;
+}
+
+.cell.x16 {
+  color: white;
+  background-color: #f59563;
+}
+
+.cell.x32 {
+  color: white;
+  background-color: #f67c5f;
+}
+
+.cell.x64 {
+  color: white;
+  background-color: #f65d3b;
+}
+
+.cell.x128 {
+  background-color: #edce71;
+  font-size: 2.5rem;
+}
+
+.cell.x256 {
+  background-color: #edcc63;
+  font-size: 2.5rem;
+}
+
+.cell.x512 {
+  background-color: #edc651;
+  font-size: 2.5rem;
+}
+
+.cell.x1024 {
+  background-color: #eec744;
+  font-size: 2.2rem;
+}
+
+.cell.x2048 {
+  background-color: #ecc230;
+  font-size: 2.2rem;
+}
+
+.cell.x4096 {
+  color: white;
+  background-color: #fe3d3d;
+  font-size: 2.2rem;
+}
+
+.cell.x8192 {
+  color: white;
+  background-color: #ff2020;
+  font-size: 2.2rem;
+}
