@@ -80,6 +80,7 @@ body {
   border-radius: 3px;
   font-size: 3rem;
   font-weight: bold;
+  transition: background-color 0.25s ease-in-out;
 }
 
 .cell.x2 {
